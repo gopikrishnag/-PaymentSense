@@ -1,0 +1,12 @@
+<button mat-icon-button color="primary" [matMenuTriggerFor]="mainmenu" aria-label="Country icon">
+  <mat-icon>menu</mat-icon> Country App
+</button>
+
+<mat-menu #mainmenu="matMenu">
+  <a mat-flat-button routerLink="../country/details">Country Details</a>
+</mat-menu>
+
+ 
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
